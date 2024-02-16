@@ -1,0 +1,7 @@
+verific -set-warning VERI-1348
+verific -f -sv pythondata_cpu_cv32e40p/system_verilog/cv32e40p_manifest.flist
+hierarchy -top riscv_core
+proc
+chformal -remove
+opt_clean
+write_verilog -norename pythondata_cpu_cv32e40p/system_verilog/riscv_core_conv_yosys.v
