@@ -41,7 +41,7 @@ module riscv_core
   parameter INSTR_RDATA_WIDTH   = 32,
   parameter PULP_SECURE         =  0,
   parameter N_PMP_ENTRIES       = 16,
-  parameter USE_PMP             =  1, //if PULP_SECURE is 1, you can still not use the PMP
+  parameter USE_PMP             =  0, //if PULP_SECURE is 1, you can still not use the PMP
   parameter PULP_CLUSTER        =  1,
   parameter A_EXTENSION         =  0,
   parameter FPU                 =  0,
